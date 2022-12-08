@@ -6,7 +6,7 @@ model:
         att_type: "soft_att"
     seq2vec:
         arch: skipthoughts
-        dir_st: seq2vec/
+        dir_st: seq2vec/skipthoughts/
         type: BayesianUniSkip
         dropout: 0.25
         fixed_emb: False
@@ -32,7 +32,7 @@ dataset:
     datatype: rsicd
     data_split:
     data_path: 'data/rsicd_precomp/'
-    image_path: 'data/rsicd_precomp/rsicd_images/'
+    image_path: '/mnt/nfs_space_2080/zzh_space/dataset/RSICD/RSICD_images/'
     vocab_path: 'vocab/rsicd_splits_vocab.json'
     local_path: './detection/representation/RSICD/rsicd_local.npy'
     batch_size: 100
